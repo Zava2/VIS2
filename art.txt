@@ -1,0 +1,21 @@
+import random
+
+def generate_ascii_art(width, height):
+    # Možné znaky pro "umění"
+    chars = ['@', '#', '$', '%', '&', '*', '+', '=', '-', '.', ' ']
+    
+    # Vytvoření uměleckého díla
+    art = ""
+    for _ in range(height):
+        row = ''.join(random.choice(chars) for _ in range(width))
+        art += row + '\n'
+    
+    return art
+
+# Parametry uměleckého díla
+width = 60
+height = 20
+
+# Generování a zobrazení ASCII artu
+ascii_art = generate_ascii_art(width, height)
+print(ascii_art)
