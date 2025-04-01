@@ -19,3 +19,5 @@ height = 20
 # Generování a zobrazení ASCII artu
 ascii_art = generate_ascii_art(width, height)
 print(ascii_art)
+
+# Komentář
